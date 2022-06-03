@@ -3,11 +3,158 @@
 }
 
 html,
-body {
-  margin: 0;
-  padding: 0;
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+  padding: 0px;
 }
 
 .container {
   max-width: 1280px;
+  margin: 0 auto;
+}
+
+.top__link {
+  color: #0772BF;
+}
+
+.busket__btn {
+  text-decoration: none;
+}
+
+.category {
+  position: relative;
+  color: #ffffff;
+  background-color: #0772BF;
+  padding: 9px 18px 9px 40px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.category::before {
+  content: url(../img/icons/burger.svg);
+  position: absolute;
+  left: 17px;
+}
+
+.top {
+  background: #000000;
+  color: #ffffff;
+  padding: 10px 0px 10px 0px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.header {
+  margin: 0px;
+}
+.header__background {
+  background-color: #C4C4C4;
+}
+.header__toplane {
+  background-color: #C4C4C4;
+  display: flex;
+  align-items: center;
+  gap: 74px;
+}
+.header__toplane .logo_name {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 15px;
+}
+.header__toplane .logo_name .logo {
+  margin-bottom: -4px;
+}
+.header__toplane .logo_name .name {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+.header__toplane .input .search {
+  padding: 9px 249px 9px 51px;
+  width: 540px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  border: none;
+  border-radius: 31px;
+}
+.header__toplane .input:before {
+  content: url(../img/icons/search.svg);
+  position: relative;
+  left: 40px;
+  top: 5px;
+}
+.header__toplane .items {
+  display: flex;
+  gap: 25px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+.header__toplane .items .language:after {
+  position: relative;
+  left: 8px;
+  top: 3px;
+  content: url(../img/icons/language.svg);
+}
+.header__toplane .items .profile:after {
+  position: relative;
+  left: 8px;
+  bottom: 2px;
+  content: url(../img/icons/Vector.svg);
+}
+.header__toplane .items .currency:after {
+  position: relative;
+  left: 8px;
+  bottom: 2px;
+  content: url(../img/icons/Vector.svg);
+}
+.header__toplane .busket {
+  display: flex;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+.header__toplane .busket .sup {
+  color: red;
+}
+.header .nav {
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+.header .nav__lists {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  align-items: center;
+}
+.header .nav__lists .link {
+  text-decoration: none;
+  color: #000000;
+}
+.header .nav__lists .link_color {
+  color: red;
 }/*# sourceMappingURL=styles.css.map */

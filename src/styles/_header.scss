@@ -1,0 +1,140 @@
+.top {
+    background: $color-black;
+    color: $color-white;
+
+    padding: 10px 0px 10px 0px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.header {
+    margin: 0px;
+
+    &__background {
+        background-color: $color-gray;
+    }
+
+    &__toplane {
+        background-color: $color-gray;
+        display: flex;
+        align-items: center;
+        gap: 74px;
+
+        .logo_name {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            gap: 15px;
+
+            .logo {
+                margin-bottom: -4px;
+            }
+
+            .name {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 25px;
+            }
+
+        }
+
+        .input {
+
+            .search {
+                padding: 9px 249px 9px 51px;
+                width: 540px;
+                
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+
+                border: none;
+                border-radius: 31px;
+            }
+        }
+
+        .input:before {
+            content: url(../img/icons/search.svg);
+            position: relative;
+            left: 40px;
+            top: 5px;
+        }
+
+        .items {
+            display: flex;
+            gap: 25px;
+
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+
+            .language:after {
+                position: relative;
+                left: 8px;
+                top: 3px;
+                content: url(../img/icons/language.svg);
+            }
+
+            .profile:after {
+                position: relative;
+                left: 8px;
+                bottom: 2px;
+                content: url(../img/icons/Vector.svg);
+            }
+
+            .currency:after {
+                position: relative;
+                left: 8px;
+                bottom: 2px;
+                content: url(../img/icons/Vector.svg);
+            }
+        }
+
+        .busket {
+            display: flex;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+
+            .sup {
+                color: $color-red;
+            }
+        }
+    }
+
+    .nav {
+        background-color: $color-white;
+        margin-top: 20px;
+
+        &__lists {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+            align-items: center;
+
+            .link {
+            text-decoration: none;
+            color: $color-black;
+            }
+
+            .link_color {
+                color: $color-red;
+            }
+        }
+    }
+}

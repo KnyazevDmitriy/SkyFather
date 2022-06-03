@@ -1,0 +1,28 @@
+.top__link {
+    color: $color-blue;
+}
+
+.busket__btn {
+    text-decoration: none;
+}
+
+.category {
+    position: relative;
+    color: $color-white;
+    background-color: $color-blue;
+
+    padding: 9px 18px 9px 40px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+.category::before {
+    content: url(../img/icons/burger.svg);
+    position: absolute;
+    left: 17px;
+}
