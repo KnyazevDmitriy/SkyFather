@@ -44,6 +44,14 @@ p {
   left: 17px;
 }
 
+.banner__button_btn {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  padding: 10px 50px;
+  text-decoration: none;
+}
+
 .top {
   background: #000000;
   color: #ffffff;
@@ -62,10 +70,10 @@ p {
   margin: 0px;
 }
 .header__background {
-  background-color: #C4C4C4;
+  background-color: #e8e4e4;
 }
 .header__toplane {
-  background-color: #C4C4C4;
+  background-color: #e8e4e4;
   display: flex;
   align-items: center;
   gap: 74px;
@@ -157,4 +165,94 @@ p {
 }
 .header .nav__lists .link_color {
   color: red;
+}
+.header .banner {
+  background-image: url(../img/banner.png);
+  height: 464px;
+  display: flex;
+  flex-direction: column;
+}
+.header .banner__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 128px;
+  padding-left: 247px;
+}
+.header .banner__content .title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+}
+.header .banner__content .descr {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.header .banner__button {
+  margin-top: 60px;
+  margin-left: 247px;
+}
+
+.section1 .title {
+  margin-top: 61px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #000000;
+}
+.section1__products {
+  margin-top: 50px;
+}
+.section1__products .product {
+  max-width: 240px;
+  text-align: center;
+}
+.section1__products .product .snowboard1 {
+  padding-bottom: 20px;
+}
+.section1__products .product__descr {
+  text-align: left;
+  font-family: "Open Sans";
+  font-style: normal;
+  margin-bottom: 15px;
+  line-height: 19px;
+}
+.section1__products .product__descr .bold {
+  font-weight: bold;
+}
+.section1__products .product__descr .darkgray {
+  color: rgb(122, 120, 120);
+}
+.section1__products .product .elements {
+  display: flex;
+  justify-content: space-between;
+}
+.section1__products .product .elements .price_sale {
+  display: flex;
+  gap: 10px;
+}
+.section1__products .product .elements .price {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+.section1__products .product .elements .sale {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgb(122, 120, 120);
+  text-decoration: line-through;
 }/*# sourceMappingURL=styles.css.map */

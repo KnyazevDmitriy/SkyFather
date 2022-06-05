@@ -26,3 +26,14 @@
     position: absolute;
     left: 17px;
 }
+
+.banner__button_btn {
+    color: $color-white;
+
+    border: 2px solid $color-white;
+    border-radius: 30px;
+    padding: 10px 50px;
+
+    text-decoration: none;
+
+}

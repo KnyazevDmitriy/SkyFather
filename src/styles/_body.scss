@@ -1,0 +1,75 @@
+.section1 {
+    .title {
+        margin-top: 61px;
+
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 44px;
+
+        color: $color-black;
+    }
+
+    &__products {
+        margin-top: 50px;
+
+
+        .product {
+            max-width: 240px;
+            text-align: center;
+
+            .snowboard1 {
+                padding-bottom: 20px;
+            }
+
+            &__descr {
+                text-align: left;
+
+                font-family: 'Open Sans';
+                font-style: normal;
+
+                margin-bottom: 15px;
+
+                line-height: 19px;
+
+                .bold {
+                    font-weight: bold;
+                }
+
+                .darkgray {
+                    color: $color-darkgray;
+                }
+            }
+
+            .elements {
+                display: flex;
+                justify-content: space-between;
+    
+                .price_sale {
+                    display: flex;
+                    gap: 10px;
+                }
+    
+                .price {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+    
+                .sale {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: $color-darkgray;
+                    text-decoration: line-through;
+                }
+            }
+        }
+
+    }
+}

@@ -137,4 +137,45 @@
             }
         }
     }
+
+    .banner {
+        background-image: url(../img/banner.png);
+        height: 464px;
+        display: flex;
+        flex-direction: column;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            
+            padding-top: 128px;
+            padding-left: 247px;
+
+            .title {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 44px;
+                
+                color: $color-white;
+            }
+    
+            .descr {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+    
+                color: $color-white;
+            }
+        }
+
+        &__button {
+            margin-top: 60px;
+            margin-left: 247px;
+        }
+    }
 }
