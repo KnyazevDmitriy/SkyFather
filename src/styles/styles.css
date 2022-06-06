@@ -151,7 +151,6 @@ p {
 }
 .header .nav {
   background-color: #ffffff;
-  margin-top: 20px;
 }
 .header .nav__lists {
   display: flex;
@@ -200,7 +199,7 @@ p {
   margin-left: 247px;
 }
 
-.section1 .title {
+.title {
   margin-top: 61px;
   font-family: "Open Sans";
   font-style: normal;
@@ -209,45 +208,91 @@ p {
   line-height: 44px;
   color: #000000;
 }
-.section1__products {
-  margin-top: 50px;
+
+.wrapper {
+  display: flex;
+  gap: 100px;
 }
-.section1__products .product {
+.wrapper .section1 {
+  margin-top: 150px;
+  margin-left: -295px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .section1 .select__cattegories {
+  border: none;
+}
+.wrapper .section1 .select__cattegories:focus-visible {
+  outline: none;
+}
+.wrapper .section1 .select_margin {
+  margin-top: 15px;
+}
+.wrapper .section1 .subtitle {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.wrapper .section1 .all_boards {
+  margin-top: 26px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgb(122, 120, 120);
+}
+.wrapper .section1 .view_more {
+  margin-top: 74px;
+  border: none;
+  color: black;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 11px;
+}
+.wrapper .section1 .view_more:focus-visible {
+  outline: none;
+}
+.wrapper .section2 {
+  margin-top: 150px;
+}
+.wrapper .section2__products .product {
   max-width: 240px;
   text-align: center;
 }
-.section1__products .product .snowboard1 {
+.wrapper .section2__products .product .snowboard1 {
   padding-bottom: 20px;
 }
-.section1__products .product__descr {
+.wrapper .section2__products .product__descr {
   text-align: left;
   font-family: "Open Sans";
   font-style: normal;
   margin-bottom: 15px;
   line-height: 19px;
 }
-.section1__products .product__descr .bold {
+.wrapper .section2__products .product__descr .bold {
   font-weight: bold;
 }
-.section1__products .product__descr .darkgray {
+.wrapper .section2__products .product__descr .darkgray {
   color: rgb(122, 120, 120);
 }
-.section1__products .product .elements {
+.wrapper .section2__products .product .elements {
   display: flex;
   justify-content: space-between;
 }
-.section1__products .product .elements .price_sale {
+.wrapper .section2__products .product .elements .price_sale {
   display: flex;
   gap: 10px;
 }
-.section1__products .product .elements .price {
+.wrapper .section2__products .product .elements .price {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
 }
-.section1__products .product .elements .sale {
+.wrapper .section2__products .product .elements .sale {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
