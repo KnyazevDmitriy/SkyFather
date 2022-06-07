@@ -216,38 +216,53 @@ p {
 .wrapper .section1 {
   margin-top: 150px;
   margin-left: -295px;
+  width: 21%;
   display: flex;
   flex-direction: column;
 }
-.wrapper .section1 .select__cattegories {
-  border: none;
+.wrapper .section1 details summary::after {
+  position: absolute;
+  right: 0;
+  content: url(../img/icons/Vector.svg);
 }
-.wrapper .section1 .select__cattegories:focus-visible {
-  outline: none;
+.wrapper .section1 details[open] summary::after {
+  position: absolute;
+  right: 0;
+  content: url(../img/Vector2.svg);
 }
-.wrapper .section1 .select_margin {
-  margin-top: 15px;
+.wrapper .section1 .spoiler {
+  display: flex;
+  margin-top: 10px;
 }
-.wrapper .section1 .subtitle {
+.wrapper .section1 .spoiler summary {
+  position: relative;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
-.wrapper .section1 .all_boards {
-  margin-top: 26px;
+.wrapper .section1 .spoiler summary::before {
+  position: absolute;
+  left: -4px;
+  content: url(../img/white.png);
+}
+.wrapper .section1 .spoiler__wrapper {
+  margin-left: 10px;
+}
+.wrapper .section1 .descr {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 25px;
   color: rgb(122, 120, 120);
 }
 .wrapper .section1 .view_more {
-  margin-top: 74px;
+  margin-top: 10px;
   border: none;
   color: black;
+  width: 100%;
   border-bottom: 1px solid #000000;
   padding-bottom: 11px;
 }
