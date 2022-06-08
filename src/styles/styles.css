@@ -17,6 +17,14 @@ p {
   margin: 0 auto;
 }
 
+input:focus-visible {
+  outline: none;
+}
+
+select:focus-visible {
+  outline: none;
+}
+
 .top__link {
   color: #0772BF;
 }
@@ -50,6 +58,31 @@ p {
   border-radius: 30px;
   padding: 10px 50px;
   text-decoration: none;
+}
+
+.section4__contacts_btn {
+  background-color: #0772BF;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 7px 17px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 5px;
+}
+
+.email_btn {
+  background-color: #0772BF;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 7px 30px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .top {
@@ -212,6 +245,8 @@ p {
 .wrapper {
   display: flex;
   gap: 100px;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 30px;
 }
 .wrapper .section1 {
   margin-top: 150px;
@@ -233,6 +268,7 @@ p {
 .wrapper .section1 .spoiler {
   display: flex;
   margin-top: 10px;
+  cursor: pointer;
 }
 .wrapper .section1 .spoiler summary {
   position: relative;
@@ -266,48 +302,146 @@ p {
   border-bottom: 1px solid #000000;
   padding-bottom: 11px;
 }
-.wrapper .section1 .view_more:focus-visible {
-  outline: none;
-}
 .wrapper .section2 {
   margin-top: 150px;
 }
-.wrapper .section2__products .product {
+.wrapper .section2 .sort_all {
+  display: flex;
+  align-items: center;
+  gap: 282px;
+}
+.wrapper .section2 .sort_all__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.wrapper .section2 .sort_all .sort_amount_popular {
+  display: flex;
+  gap: 65px;
+}
+.wrapper .section2 .sort_all .sort_amount_popular .amount {
+  border: 1px solid #000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 5px 12px 12px;
+  gap: 30px;
+}
+.wrapper .section2 .sort_all .sort_amount_popular .amount__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(122, 120, 120);
+}
+.wrapper .section2 .sort_all .sort_amount_popular .amount__number {
+  border: none;
+}
+.wrapper .section2 .sort_all .sort_amount_popular .amount__number:focus-visible {
+  outline: none;
+}
+.wrapper .section2 .sort_all .sort_amount_popular .popular {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000000;
+  gap: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.wrapper .section2 .sort_all .sort_amount_popular .popular__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(122, 120, 120);
+}
+.wrapper .section2__products {
+  margin-top: 70px;
+  display: flex;
+  gap: 25px;
+}
+.wrapper .section2__products .column_border {
+  padding-left: 25px;
+  padding-right: 25px;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+.wrapper .section2__products__column {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .section2__products__column .mountians {
+  border: 1px solid black;
+  height: 358px;
+}
+.wrapper .section2__products__column .product {
   max-width: 240px;
   text-align: center;
+  margin-top: 41px;
 }
-.wrapper .section2__products .product .snowboard1 {
+.wrapper .section2__products__column .product .snowboard {
   padding-bottom: 20px;
 }
-.wrapper .section2__products .product__descr {
+.wrapper .section2__products__column .product__travel .travel_title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.03em;
+}
+.wrapper .section2__products__column .product__travel .travel_subtitle {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 33px;
+  letter-spacing: 0.03em;
+}
+.wrapper .section2__products__column .product__travel .travel_desc {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  margin-top: 15px;
+  color: rgb(122, 120, 120);
+}
+.wrapper .section2__products__column .product__descr {
   text-align: left;
   font-family: "Open Sans";
   font-style: normal;
   margin-bottom: 15px;
   line-height: 19px;
 }
-.wrapper .section2__products .product__descr .bold {
+.wrapper .section2__products__column .product__descr .bold {
   font-weight: bold;
 }
-.wrapper .section2__products .product__descr .darkgray {
+.wrapper .section2__products__column .product__descr .darkgray {
   color: rgb(122, 120, 120);
 }
-.wrapper .section2__products .product .elements {
+.wrapper .section2__products__column .product .elements {
   display: flex;
   justify-content: space-between;
 }
-.wrapper .section2__products .product .elements .price_sale {
+.wrapper .section2__products__column .product .elements .price_sale {
   display: flex;
   gap: 10px;
 }
-.wrapper .section2__products .product .elements .price {
+.wrapper .section2__products__column .product .elements .price {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
 }
-.wrapper .section2__products .product .elements .sale {
+.wrapper .section2__products__column .product .elements .sale {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
@@ -315,4 +449,143 @@ p {
   line-height: 19px;
   color: rgb(122, 120, 120);
   text-decoration: line-through;
+}
+.wrapper .section2 .pages {
+  margin-top: 37px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+.wrapper .section2 .pages .page {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgb(122, 120, 120);
+}
+
+.section3 {
+  padding-bottom: 64px;
+}
+.section3__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+.section3 .cards {
+  display: flex;
+  justify-content: space-between;
+}
+.section3 .cards .card {
+  position: relative;
+  width: 272px;
+  height: 272px;
+  border: 1px solid #000000;
+  display: flex;
+  flex-direction: column;
+}
+.section3 .cards .card .img {
+  margin: 16px 56px 0px;
+}
+.section3 .cards .card__text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+.section3 .cards .card__text__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.section3 .cards .card__text__price {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+.section3 .swiper-button-prev,
+.section3 .swiper-button-next {
+  color: #BFBEBE;
+}
+
+.section4 {
+  border-top: 1px solid #000000;
+  padding-top: 30px;
+  padding-bottom: 46px;
+}
+.section4__contacts {
+  display: flex;
+  justify-content: space-around;
+}
+.section4__contacts__call {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: center;
+}
+.section4__contacts__call .gearheads {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.section4__contacts__call .help,
+.section4__contacts__call .call {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+.section4__contacts__call .number {
+  text-decoration: none;
+  color: #000000;
+}
+.section4__contacts__email {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: center;
+}
+.section4__contacts__email .know {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+.section4__contacts__email .sales {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.section4__contacts__email .email_text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+.section4__contacts__email .email {
+  display: flex;
+}
+.section4__contacts__email .email .email_input {
+  width: 224px;
+  height: 36px;
 }/*# sourceMappingURL=styles.css.map */

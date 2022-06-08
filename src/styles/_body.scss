@@ -14,6 +14,9 @@
     display: flex;
     gap: 100px;
 
+    border-bottom: 1px solid $color-black;
+    padding-bottom: 30px;
+
     .section1 {
         margin-top: 150px;
         margin-left: -295px;
@@ -37,6 +40,7 @@
         .spoiler {
             display: flex;
             margin-top: 10px;
+            cursor: pointer;
 
             summary {
                 position: relative;
@@ -52,13 +56,6 @@
                 left: -4px;
                 content: url(../img/white.png);
             }
-
-            // summary[open]::after {
-            //     position: absolute;
-            //     right: 0;
-            //     top: 0;
-            //     content: url(../img/icons/Vector.svg);
-            // }
 
             &__wrapper {
                 margin-left: 10px;
@@ -84,74 +81,347 @@
             border-bottom: 1px solid $color-black;
             padding-bottom: 11px;
         }
-
-        .view_more:focus-visible {
-            outline: none;
-        }
     }
 
     .section2 {
         margin-top: 150px;
 
-        &__products {
+        .sort_all {
+            display: flex;
+            align-items: center;
+            gap: 282px;
 
+            &__text {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+            }
 
-            .product {
-                max-width: 240px;
-                text-align: center;
+            .sort_amount_popular {
+                display: flex;
+                gap: 65px;
 
-                .snowboard1 {
-                    padding-bottom: 20px;
-                }
-
-                &__descr {
-                    text-align: left;
-
-                    font-family: 'Open Sans';
-                    font-style: normal;
-
-                    margin-bottom: 15px;
-
-                    line-height: 19px;
-
-                    .bold {
-                        font-weight: bold;
-                    }
-
-                    .darkgray {
-                        color: $color-darkgray;
-                    }
-                }
-
-                .elements {
+                .amount {
+                    border: 1px solid $color-black;
                     display: flex;
                     justify-content: space-between;
-        
-                    .price_sale {
-                        display: flex;
-                        gap: 10px;
-                    }
-        
-                    .price {
+                    padding: 12px 5px 12px 12px;
+                    gap: 30px;
+
+                    &__text {
                         font-family: 'Open Sans';
                         font-style: normal;
-                        font-weight: 600;
+                        font-weight: 400;
                         font-size: 16px;
-                        line-height: 22px;
+                        line-height: 20px;
+                        color: $color-darkgray;
                     }
-        
-                    .sale {
+
+                    &__number {
+                        border: none;
+                    }
+
+                    &__number:focus-visible {
+                        outline: none;
+                    }
+                    
+                }
+
+                .popular {
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid $color-black;
+                    gap: 16px;
+                    padding-left: 12px;
+                    padding-right: 12px;
+
+                    &__text {
                         font-family: 'Open Sans';
                         font-style: normal;
-                        font-weight: 600;
-                        font-size: 14px;
-                        line-height: 19px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 20px;
                         color: $color-darkgray;
-                        text-decoration: line-through;
                     }
                 }
             }
+        }
 
+        &__products {
+            margin-top: 70px;
+            display: flex;
+            gap: 25px;
+
+            .column_border {
+                padding-left: 25px;
+                padding-right: 25px;
+                border-left: 1px solid $color-black;
+                border-right: 1px solid $color-black;
+            }
+
+            &__column {
+            display: flex;
+            flex-direction: column;
+            
+                .mountians {
+                    border: 1px solid black;
+                    height: 358px;
+                }
+
+                .product {
+                    max-width: 240px;
+                    text-align: center;
+                    margin-top: 41px;
+
+                    .snowboard {
+                        padding-bottom: 20px;
+                    }
+
+                    &__travel {
+
+                        .travel_title {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 33px;
+                            letter-spacing: 0.03em;
+                        }
+
+                        .travel_subtitle {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 33px;
+                            letter-spacing: 0.03em;
+                        }
+
+                        .travel_desc {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 22px;
+                            letter-spacing: 0.03em;
+                            text-decoration-line: underline;
+                            margin-top: 15px;
+                            color: $color-darkgray;
+                        }
+                    }
+
+                    &__descr {
+                        text-align: left;
+
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        margin-bottom: 15px;
+                        line-height: 19px;
+
+                        .bold {
+                            font-weight: bold;
+                        }
+
+                        .darkgray {
+                            color: $color-darkgray;
+                        }
+                    }
+
+                    .elements {
+                        display: flex;
+                        justify-content: space-between;
+            
+                        .price_sale {
+                            display: flex;
+                            gap: 10px;
+                        }
+            
+                        .price {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+            
+                        .sale {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 19px;
+                            color: $color-darkgray;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pages {
+            margin-top: 37px;
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+
+            .page {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                color: $color-darkgray;
+            }
+        }
+    }
+}
+
+.section3 {
+    padding-bottom: 64px;
+
+    &__title {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 44px;
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cards {
+        display: flex;
+        justify-content: space-between;
+
+        .card {
+            position: relative;
+            width: 272px;
+            height: 272px;
+            border: 1px solid $color-black;
+
+            display: flex;
+            flex-direction: column;
+
+            .img {
+                margin: 16px 56px 0px;
+            }
+
+            &__text {
+                display: flex;
+                flex-direction: column;
+                margin-left: 16px;
+
+                &__title {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+
+                &__price {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 22px;
+
+                    position:absolute;
+                    bottom: 10px;
+                    left: 15px;
+                }
+            }
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: $color-lightgray;
+    }
+}
+
+.section4 {
+    border-top: 1px solid $color-black;
+    padding-top: 30px;
+    padding-bottom: 46px;
+
+    &__contacts {
+        display: flex;
+        justify-content: space-around;
+
+        &__call {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            align-items: center;
+
+            .gearheads {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+            }
+
+            .help,
+            .call {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px;
+            }
+
+            .number {
+                text-decoration: none;
+                color: $color-black;
+            }
+        }
+
+        &__email {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            align-items: center;
+
+            .know {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px;
+            }
+
+            .sales {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+            }
+
+            .email_text {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+            }
+
+            .email {
+                display: flex;
+
+                .email_input {
+                    width: 224px;
+                    height: 36px;
+                }
+            }
         }
     }
 }

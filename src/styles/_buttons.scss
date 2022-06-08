@@ -35,5 +35,32 @@
     padding: 10px 50px;
 
     text-decoration: none;
+}
 
+.section4__contacts_btn {
+    background-color: $color-blue;
+    text-decoration: none;
+    color: $color-white;
+    padding: 7px 17px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    border-radius: 5px;
+}
+
+.email_btn {
+    background-color: $color-blue;
+    text-decoration: none;
+    color: $color-white;
+    padding: 7px 30px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
 }

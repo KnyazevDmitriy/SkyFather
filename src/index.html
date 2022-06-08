@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <title>Sky</title>
 
     
@@ -87,8 +89,8 @@
             </div>
         </div>
     </header>
-    <main class="container">
-        <div class="wrapper">
+    <main>
+        <div class="wrapper container">
             <h1 class="title">Snowboards</h1>
             <section class="section1">
                 <details class="spoiler">
@@ -245,27 +247,298 @@
                 </details>
             </section>
             <section class="section2">
+                <div class="sort_all">
+                    <p class="sort__text">170 Matches found</p>
+                    <div class="sort_amount_popular">
+                        <div class="amount">
+                            <p class="amount__text">View</p>
+                            <select class="amount__number">
+                                <option value="value1">3</option>
+                                <option value="value2">6</option>
+                                <option value="value3" selected>9</option>
+                                <option value="value4">12</option>
+                                <option value="value5">18</option>
+                                <option value="value6">21</option>
+                            </select>
+                        </div>
+                        <div class="popular">
+                            <p class="popular__text">Sort by</p>
+                            <select class="amount__number">
+                                <option value="value1" selected>Most popular</option>
+                                <option value="value2">Not popular</option>
+                                <option value="value3">Dont buy this</option>
+                                <option value="value4">Why r u there?</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
                 <div class="section2__products">
-                    <div class="product">
-                        <img class="snowboard1" src="./img/snowboard1.svg" alt="">
-                        <p class="product__descr"><span class="bold">Niche: </span><span class="darkgray">Nightshade Snowboard - Women's - 2019/2020</span></p>
-                        <div class="elements">
-                            <div class="price_sale">
-                                <p class="price">$ 398.93</p>
-                                <p class="sale">$ 499.00</p>
+                    <div class="section2__products__column">
+                        <div class="product">
+                            <img class="snowboard" src="./img/snowboard1.svg" alt="">
+                            <p class="product__descr"><span class="bold">Niche: </span><span class="darkgray">Nightshade Snowboard - Women's - 2019/2020</span></p>
+                            <div class="elements">
+                                <div class="price_sale">
+                                    <p class="price">$ 398.93</p>
+                                    <p class="sale">$ 499.00</p>
+                                </div>
+                                <div class="grade">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star-gray.svg" alt="">
+                                </div>
                             </div>
-                            <div class="grade">
-                                <img src="./img/star_blue.svg" alt="">
-                                <img src="./img/star_blue.svg" alt="">
-                                <img src="./img/star_blue.svg" alt="">
-                                <img src="./img/star_blue.svg" alt="">
-                                <img src="./img/star-gray.svg" alt="">
+                        </div>
+                        <div class="product">
+                            <img class="snowboard" src="./img/snowboard1.svg" alt="">
+                            <p class="product__descr"><span class="bold">Niche: </span><span class="darkgray">Nightshade Snowboard - Women's - 2019/2020</span></p>
+                            <div class="elements">
+                                <div class="price_sale">
+                                    <p class="price">$ 398.93</p>
+                                    <p class="sale">$ 499.00</p>
+                                </div>
+                                <div class="grade">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star-gray.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img class="snowboard" src="./img/snowboard2.svg" alt="">
+                            <div class="product__descr"><p class="bold">Jones</p><span class="darkgray">Twin Sister Snowboard - Women's - 2020/2021</span></div>
+                            <div class="elements">
+                                <div class="price_sale">
+                                    <p class="price">$ 499.95</p>
+                                </div>
+                                <div class="grade">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star-gray.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section2__products__column column_border">
+                        <div class="product">
+                            <img class="snowboard" src="./img/snowboard3.svg" alt="">
+                            <p class="product__descr"><span class="bold">Weston: </span><span class="darkgray">Backwoods Snowboard - 2020/2021</span></p>
+                            <div class="elements">
+                                <div class="price_sale">
+                                    <p class="price">$ 398.93</p>
+                                    <p class="sale">$ 499.00</p>
+                                </div>
+                                <div class="grade">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star-gray.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img class="snowboard" src="./img/snowboard3.svg" alt="">
+                            <p class="product__descr">
+                                <span class="bold">Weston:</span>
+                            <span class="darkgray">Backwoods Snowboard - 2020/2021</span>
+                            </p>
+                            <div class="elements">
+                                <div class="price_sale">
+                                    <p class="price">$ 398.93</p>
+                                    <p class="sale">$ 499.00</p>
+                                </div>
+                                <div class="grade">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star-gray.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img class="snowboard" src="./img/snowboard5.svg" alt="">
+                            <div class="product__descr">
+                                <p class="bold">Jones</p>
+                                <span class="darkgray">Twin Sister Snowboard - Women's - 2020/2021</span></div>
+                            <div class="elements">
+                                <div class="price_sale">
+                                    <p class="price">$ 599.95</p>
+                                </div>
+                                <div class="grade">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star-gray.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section2__products__column">
+                        <div class="product">
+                            <img class="snowboard" src="./img/snowboard4.svg" alt="">
+                            <p class="product__descr">
+                                <span class="bold">Niche:</span>
+                                <span class="darkgray">Nightshade Snowboard - Women's - 2019/2020</span>
+                            </p>
+                            <div class="elements">
+                                <div class="price_sale">
+                                    <p class="price">$ 398.93</p>
+                                    <p class="sale">$ 499.00</p>
+                                </div>
+                                <div class="grade">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star-gray.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img class="snowboard" src="./img/snowboard4.svg" alt="">
+                            <p class="product__descr">
+                                <span class="bold">Niche: 
+                                </span>
+                                <span class="darkgray">Nightshade Snowboard - Women's - 2019/2020
+                                </span>
+                            </p>
+                            <div class="elements">
+                                <div class="price_sale">
+                                    <p class="price">$ 398.93</p>
+                                    <p class="sale">$ 499.00</p>
+                                </div>
+                                <div class="grade">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star_blue.svg" alt="">
+                                    <img src="./img/star-gray.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product mountians">
+                            <img class="snowboard" src="./img/mountians.png" alt="" width="240">
+                            <div class="product__travel">
+                                <p class="travel_title">EVO TRIP</p>
+                                <p class="travel_subtitle">ADVENTURE TRAVEL PACKAGE</p>
+                                <p class="travel_desc">Travel with Us</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="pages">
+                    <p class="page">Page:</p>
+                    <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3" selected>3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                    </select>
+                    <p class="page">of 25</p>
+                </div>
             </section>
         </div>
+        <section class="section3">
+            <p class="section3__title container">Best Sellers</p>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="cards container">
+                            <div class="card">
+                                <img class="img" src="./img/swiper/helmet.jpg" alt="" width="160" height="160">
+                                <div class="card__text">
+                                    <p class="card__text__title">POC Obex Spin Helmet</p>
+                                    <p class="card__text__price">$ 279.95</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="img" src="./img/swiper/boots1.jpg" alt="" width="160" height="160">
+                                <div class="card__text">
+                                    <p class="card__text__title">Rossignol</p>
+                                    <p class="card__text__title">EVO 70 Ski Boots</p>
+                                    <p class="card__text__price">$ 89.99</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="img" src="./img/swiper/boots2.jpg" alt="" width="160" height="160">
+                                <div class="card__text">
+                                    <p class="card__text__title">Tecnica</p>
+                                    <p class="card__text__title">T 2 Pearl Girl Ski Boots</p>
+                                    <p class="card__text__price">$ 119.95</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="img" src="./img/swiper/snowboard.jpg" alt="" width="160" height="160">
+                                <div class="card__text">
+                                    <p class="card__text__title">Rossignol</p>
+                                    <p class="card__text__title">XV Sashimi LG Light</p>
+                                    <p class="card__text__price">$ 599.95</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+        
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <section class="section4 container">
+            <div class="section4__contacts">
+                <div class="section4__contacts__call">
+                    <p class="help">Need Help?</p>
+                    <p class="gearheads">Talk to our Gearheads 24/7 about your needs</p>
+                    <a class="section4__contacts_btn" href="#">Chat Now</a>
+                    <p class="call">Or Call: <a class="number" href="tel:18004094502">1-800-409-4502</a></p>
+                </div>
+                <div class="section4__contacts__email">
+                    <p class="know">Stay in the know</p>
+                    <p class="sales">Be the first to see sales & new gear!</p>
+                    <div>
+                        <legend class="email_text">Email Address</legend>
+                        <div class="email">
+                            <input class="email_input" type="text">
+                            <a class="email_btn" href="#">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+
 </body>
 </html>
