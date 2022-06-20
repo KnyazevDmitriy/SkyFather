@@ -64,3 +64,99 @@
     font-size: 16px;
     line-height: 22px;
 }
+
+.size-button {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid #BFBEBE;
+    transition: all .3s;
+    background: none;
+    cursor: pointer;
+
+}
+
+.size-button:hover {
+    color: #1977DA;
+    border: 1px solid #1977DA;
+}
+
+.minus {
+    padding: 1rem;
+    border: 1px solid #5E5C5C;
+    border-radius: 50%;
+    position: relative;
+    background: none;
+    cursor: pointer;
+
+    .item-minus {
+        position: absolute;
+        top: 14px;
+        left: 7px;
+    }
+}
+
+.number {
+    padding: 7px 12px;
+    border: 1px solid #5E5C5C;
+}
+
+.plus {
+    padding: 1rem;
+    border: 1px solid #5E5C5C;
+    border-radius: 50%;
+    position: relative;
+    background: none;
+    cursor: pointer;
+
+    .item-plus {
+        position: absolute;
+        top: 6px;
+        left: 7px;
+    }
+}
+
+.add-cart {
+    background-color: $color-blue;
+    color: $color-white;
+    width: 464px;
+    height: 54px;
+    border: none;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.add-wish {
+    background: none;
+    color: $color-black;
+    width: 464px;
+    height: 54px;
+    border: 1px solid black;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.section2__contacts_btn {
+    background-color: $color-blue;
+    text-decoration: none;
+    color: $color-white;
+    padding: 7px 17px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    border-radius: 5px;
+}

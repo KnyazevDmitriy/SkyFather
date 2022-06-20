@@ -1,0 +1,93 @@
+.footer {
+    .footer-nav {
+        background-color: $color-blue;
+        padding-top: 10px;
+        padding-bottom: 8px;
+    
+        &__lists {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            gap: 65px;
+    
+            .link {
+                text-decoration: none;
+                color: $color-white;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+        margin-top: 36px;
+        justify-content: space-around;
+
+        .lists {
+            list-style: none;
+
+            &__title {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 16px;
+                margin-bottom: 15px;
+            }
+
+            &__list {
+                margin-bottom: 8px;
+            }
+
+            &__link {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                color: $color-black;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .socials {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            
+            a {
+                text-decoration: none;
+            }
+        }
+
+        &__desc {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        .store {
+            display: flex;
+            gap: 14px;
+        }
+    }
+
+    .logo {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

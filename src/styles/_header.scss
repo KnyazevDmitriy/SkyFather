@@ -49,6 +49,7 @@
 
         .input {
 
+
             .search {
                 padding: 9px 249px 9px 51px;
                 width: 540px;
@@ -136,7 +137,9 @@
             }
         }
     }
-
+.link:hover {
+    transform: rotate(0.5turn);
+}
     .banner {
         background-image: url(../img/banner.png);
         height: 464px;
